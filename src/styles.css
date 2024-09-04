@@ -4,24 +4,25 @@ body {
   margin: 0;
 }
 
+/* Default settings for desktop and larger screens */
 #webgi-canvas {
   width: 100%;
   height: 100%;
 }
-
 #webgi-canvas-container {
   width: 100vw;
   height: 100vh;
 }
 
-@media (max-width: 768px) {
+/* Settings for mobile screens */
+@media only screen and (max-width: 768px) {
   #webgi-canvas {
-    width: 100vw;
-    height: 50vh; /* Adjust the height as per your requirement */
+    width: 100%;
+    height: 100%;
   }
-
   #webgi-canvas-container {
     width: 100vw;
-    height: 50vh; /* Adjust for mobile view */
+    height: 100vh;
+    /* Adjust any other properties for mobile if needed */
   }
 }
